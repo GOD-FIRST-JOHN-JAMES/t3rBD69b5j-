@@ -1,0 +1,736 @@
+THANK YOU JESUS CHRIST SON OF LIVING GOD 
+# These are supported funding model platforms
+ JESUS
+LORD
+GOD
+github: # Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [user1, user2]
+patreon: # Replace with a single Patreon username
+open_collective: # Replace with a single Open Collective username
+ko_fi: # Replace with a single Ko-fi username
+tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
+community_bridge: # Replace with a single Community Bridge project-name e.g., cloud-foundry
+liberapay: # Replace with a single Liberapay username
+issuehunt: # Replace with a single IssueHunt username
+otechie: # Replace with a single Otechie username
+lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
+custom: # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
+https://www.facebook.com/t3rBD69b5jhttps://www.twitter.com/t3rBD69b5j
+THANK YOU JESUS CHRIST SON OF LIVING GOD 
+import './bootstrap';
+import { createApp, h } from 'vue'
+import { createInertiaApp } from '@inertiajs/vue3'
+
+createInertiaApp({
+    resolve: name => {
+        const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
+        return pages[`./Pages/${name}.vue`]
+    },
+    setup({ el, App, props, plugin }) {
+        createApp({ render: () => h(App, props) })
+            .use(plugin)
+            .mount(el)
+    },
+})/**
+ * We'll load the axios HTTP library which allows us to easily issue requests
+ * to our Laravel back-end. This library automatically handles sending the
+ * CSRF token as a header based on the value of the "XSRF" token cookie.
+ */
+
+import axios from 'axios';
+window.axios = axios;
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+/**
+ * Echo exposes an expressive API for subscribing to channels and listening
+ * for events that are broadcast by Laravel. Echo and event broadcasting
+ * allows your team to easily build robust real-time web applications.
+ */
+
+// import Echo from 'laravel-echo';
+
+// import Pusher from 'pusher-js';
+// window.Pusher = Pusher;
+
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: import.meta.env.VITE_PUSHER_APP_KEY,
+//     cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? 'mt1',
+//     wsHost: import.meta.env.VITE_PUSHER_HOST ? import.meta.env.VITE_PUSHER_HOST : `ws-${import.meta.env.VITE_PUSHER_APP_CLUSTER}.pusher.com`,
+//     wsPort: import.meta.env.VITE_PUSHER_PORT ?? 80,
+//     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 443,
+//     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
+//     enabledTransports: ['ws', 'wss'],
+// });
+User-agent: *
+allow: GOD-FIRST-JOHN-JAMES, t3rBD69b5j
+THANK YOU JESUS CHRIST
+<?php
+
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
+
+define('LARAVEL_START', microtime(true));
+
+/*
+|--------------------------------------------------------------------------
+| Check If The Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is in maintenance / demo mode via the "down" command
+| we will load this file so that any pre-rendered content can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
+
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
+
+require __DIR__.'/../vendor/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$kernel = $app->make(Kernel::class);
+
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
+*.sqlite*
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Genre;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class GenreSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        [$fantasy, $horror, $mystery, $romance, $scienceFiction, $thrillerAndSuspense, $western, $biography] = Genre::factory()->forEachSequence(
+            ['name' => 'Fantasy'],
+            ['name' => 'Horror'],
+            ['name' => 'Mystery'],
+            ['name' => 'Romance'],
+            ['name' => 'Science Fiction'],
+            ['name' => 'Thriller and Suspense'],
+            ['name' => 'Western'],
+            ['name' => 'Biography'],
+        )->create();
+
+        Genre::factory()->for($fantasy, 'parent')->forEachSequence(
+            ['name' => 'Alternate History'],
+            ['name' => 'Children\'s Story'],
+            ['name' => 'Comedy'],
+            ['name' => 'Contemporary'],
+            ['name' => 'Fairy Tale'],
+            ['name' => 'Heroic'],
+            ['name' => 'Mythic'],
+            ['name' => 'Superhero'],
+            ['name' => 'Urban'],
+            ['name' => 'Young Adult'],
+        )->create();
+
+        Genre::factory()->for($horror, 'parent')->forEachSequence(
+            ['name' => 'Gothic'],
+            ['name' => 'Historical'],
+            ['name' => 'Man-Made'],
+            ['name' => 'Monsters'],
+            ['name' => 'Psychological'],
+            ['name' => 'Quiet Horror'],
+        )->create();
+
+        Genre::factory()->for($mystery, 'parent')->forEachSequence(
+            ['name' => 'Amateur Sleuth'],
+            ['name' => 'Bumbling Detective'],
+            ['name' => 'Caper'],
+            ['name' => 'Child in Peril'],
+            ['name' => 'Cozy'],
+            ['name' => 'Hardboiled'],
+            ['name' => 'Hardboiled'],
+            ['name' => 'Historical'],
+            ['name' => 'Howdunit'],
+            ['name' => 'Legal'],
+            ['name' => 'Locked Room'],
+            ['name' => 'Police Procedural'],
+            ['name' => 'Private Detective'],
+            ['name' => 'Whodunit'],
+        )->create();
+
+        Genre::factory()->for($romance, 'parent')->forEachSequence(
+            ['name' => 'Billionaires'],
+            ['name' => 'Comedy'],
+            ['name' => 'Contemporary'],
+            ['name' => 'Holidays'],
+            ['name' => 'Inspirational'],
+            ['name' => 'Military'],
+            ['name' => 'Regency'],
+            ['name' => 'Romantic Suspense'],
+            ['name' => 'Sports'],
+            ['name' => 'Time Travel'],
+            ['name' => 'Young Adult'],
+        )->create();
+
+        Genre::factory()->for($scienceFiction, 'parent')->forEachSequence(
+            ['name' => 'Aliens'],
+            ['name' => 'Alternate History'],
+            ['name' => 'Alternate/Parallel Universe'],
+            ['name' => 'Apocalyptic/Post-Apocalyptic'],
+            ['name' => 'Biopunk'],
+            ['name' => 'Colonization'],
+            ['name' => 'Cyberpunk'],
+            ['name' => 'Dying Earth'],
+            ['name' => 'Dystopia'],
+            ['name' => 'Galactic Empire'],
+            ['name' => 'Generation Ship'],
+            ['name' => 'Hard Science Fiction'],
+            ['name' => 'Immortality'],
+            ['name' => 'Military'],
+            ['name' => 'Nanopunk'],
+            ['name' => 'Robots/A.I.'],
+            ['name' => 'Soft Science Fiction'],
+            ['name' => 'Space Exploration'],
+            ['name' => 'Space Opera'],
+            ['name' => 'Steampunk'],
+            ['name' => 'Time Travel'],
+            ['name' => 'Utopia'],
+        )->create();
+
+        Genre::factory()->for($thrillerAndSuspense, 'parent')->forEachSequence(
+            ['name' => 'Action'],
+            ['name' => 'Conspiracy'],
+            ['name' => 'Crime'],
+            ['name' => 'Disaster'],
+            ['name' => 'Espionage'],
+            ['name' => 'Forensic'],
+            ['name' => 'Legal'],
+            ['name' => 'Medical'],
+            ['name' => 'Political'],
+            ['name' => 'Psychological'],
+            ['name' => 'Religious'],
+            ['name' => 'Religious'],
+        )->create();
+
+        Genre::factory()->for($western, 'parent')->forEachSequence(
+            ['name' => 'Bounty Hunters'],
+            ['name' => 'Cattle Drive'],
+            ['name' => 'Children\'s Story'],
+            ['name' => 'Gold Rush'],
+            ['name' => 'Gunfighters'],
+            ['name' => 'Land Rush'],
+            ['name' => 'Lawmen'],
+            ['name' => 'Outlaws'],
+            ['name' => 'Revenge'],
+            ['name' => 'Wagon Train'],
+        )->create();
+
+        Genre::factory()->for($biography, 'parent')->forEachSequence(
+            ['name' => 'Historical Fiction'],
+            ['name' => 'Academic'],
+            ['name' => 'Fictional Academic'],
+            ['name' => 'Prophetic'],
+        )->create();
+    }
+}<?php
+
+namespace Database\Seeders;
+
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Publisher;
+use App\Models\Review;
+use App\Models\User;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\File;
+
+class RealDataSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        File::copyDirectory(database_path('seeders/storage'), public_path('storage'));
+
+        $authors = $this->createAuthors();
+        [$nineteenEightyFour, $prideAndPrejudice, $theKillers, $theHobbit] = $this->createBooks($authors);
+
+        $user = User::first();
+
+        Review::factory()
+            ->by($user)
+            ->of($nineteenEightyFour)
+            ->state(['stars' => 5, 'title' => 'An Old Book With Modern Meaning', 'body' => file_get_contents(__DIR__ . '/reviews/1984.txt')])
+            ->create();
+
+        Review::factory()
+            ->by($user)
+            ->of($prideAndPrejudice)
+            ->state(['stars' => 4, 'title' => 'Everybody Should Read It At Least Once', 'body' => file_get_contents(__DIR__ . '/reviews/pride-and-prejudice.txt')])
+            ->create();
+
+        Review::factory()
+            ->by($user)
+            ->of($theKillers)
+            ->state(['stars' => 4, 'title' => 'Certainly Not What I Thought It Would Be', 'body' => file_get_contents(__DIR__ . '/reviews/the-killers.txt')])
+            ->create();
+
+        Review::factory()
+            ->by($user)
+            ->of($theHobbit)
+            ->state(['stars' => 5, 'title' => 'So Much Better Than The Film', 'body' => file_get_contents(__DIR__ . '/reviews/the-hobbit.txt')])
+            ->create();
+
+        Book::whereKey([$nineteenEightyFour->getKey(), $prideAndPrejudice->getKey(), $theKillers->getKey(), $theHobbit->getKey()])->update(['is_featured' => true]);
+    }
+
+    private function createAuthors(): Collection
+    {
+        return Author::factory()->forEachSequence(
+            ['name' => 'George Orwell', 'avatar' => '/authors/george-orwell.jpeg'],
+            ['name' => 'Jane Austen', 'avatar' => '/authors/jane-austen.jpeg'],
+            ['name' => 'Ernest Hemingway', 'avatar' => '/authors/ernest-hemingway.jpeg'],
+            ['name' => 'J. R. R. Tolkien', 'avatar' => '/authors/j-r-r-tolkien.jpeg'],
+        )->create();
+    }
+
+    private function createBooks(Collection $authors): Collection
+    {
+        [$george, $jane, $ernest, $jrr] = $authors;
+
+        return Book::factory()->forEachSequence(
+            ['title' => '1984', 'author_id' => $george, 'cover' => '/covers/1984.jpeg'],
+            ['title' => 'Pride & Prejudice', 'author_id' => $jane, 'cover' => '/covers/pride-and-prejudice.jpeg'],
+            ['title' => 'The Killers', 'author_id' => $ernest, 'cover' => '/covers/the-killers.jpeg'],
+            ['title' => 'The Hobbit', 'author_id' => $jrr, 'cover' => '/covers/the-hobbit.png'],
+            ['title' => 'Animal Farm', 'author_id' => $george, 'cover' => '/covers/animal-farm.jpeg'],
+            ['title' => 'Politics and the English Language', 'author_id' => $george, 'cover' => '/covers/politics-and-the-english-language.jpeg'],
+            ['title' => 'Emma', 'author_id' => $jane, 'cover' => '/covers/emma.jpeg'],
+            ['title' => 'Persuasion', 'author_id' => $jane, 'cover' => '/covers/persuasion.jpeg'],
+            ['title' => 'Sense & Sensibility', 'author_id' => $jane, 'cover' => '/covers/sense-and-sensibility.jpeg'],
+            ['title' => 'The Old Man and the Sea', 'author_id' => $ernest, 'cover' => '/covers/the-old-man-and-the-sea.jpeg'],
+            ['title' => 'For Whom the Bell Tolls', 'author_id' => $ernest, 'cover' => '/covers/for-whom-the-bell-tolls.jpeg'],
+            ['title' => 'A Farewell to Arms', 'author_id' => $ernest, 'cover' => '/covers/a-farewell-to-arms.jpeg'],
+            ['title' => 'The Lord of the Rings', 'author_id' => $jrr, 'cover' => '/covers/the-lord-of-the-rings.jpeg'],
+            ['title' => 'The Fellowship of the Ring', 'author_id' => $jrr, 'cover' => '/covers/the-fellowship-of-the-ring.jpeg'],
+            ['title' => 'The Two Towers', 'author_id' => $jrr, 'cover' => '/covers/the-two-towers.jpeg'],
+        )->recycle(Publisher::all())->create();
+        <?php
+
+namespace Database\Seeders;
+
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Customer;
+use App\Models\Genre;
+use App\Models\Publisher;
+use App\Models\Review;
+use App\Models\User;
+use Illuminate\Database\Seeder;
+use Illuminate\Process\Pool;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Process;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        File::deleteDirectory(public_path('storage'));
+        File::ensureDirectoryExists(public_path('storage/authors'));
+        File::ensureDirectoryExists(public_path('storage/covers'));
+
+        $user = User::factory()->create([
+            'name' => 'Luke Downing',
+            'email' => $this->command->ask("What email address would you like to use?", "luke@laracasts.com"),
+        ]);
+
+        Publisher::factory(10)->create();
+
+        $this->call([GenreSeeder::class, RealDataSeeder::class]);
+
+        $authors = Author::factory(10)->create();
+
+        $numberOfBooks = 50;
+
+        $pool = Process::pool(function (Pool $pool) use ($numberOfBooks) {
+            for ($i = 0; $i < $numberOfBooks; $i++) {
+                $pool->path(base_path())->command('php artisan db:seed BookSeeder');
+            }
+        })->start(function (string $type, string $output, int $key) {
+            $this->command->getOutput()->writeln(sprintf("Book %d output:", $key + 1));
+            $this->command->getOutput()->writeln($output);
+        });
+
+        Review::factory()->for($user, 'reviewer')->forEachSequence(
+            ...$authors
+            ->random(4)
+            ->map(fn(Author $author) => ['reviewable_id' => $author->getKey(), 'reviewable_type' => $author->getMorphClass(), 'stars' => null])
+        )->create();
+
+        $pool->wait();
+
+        $books = Book::all();
+
+        $customers = Customer::factory(70)
+            ->hasAttached($books->random(rand(0, 8)), ['due_back_at' => fake()->dateTimeBetween('-1 month', '+2 months'), 'returned_at' => null], 'allLoans')
+            ->create();
+
+        Review::factory(20)->crossJoinSequence(
+            $customers->random(10)->map(fn (Customer $customer) => ['reviewer_id' => $customer->getKey(), 'reviewer_type' => $customer->getMorphClass()]),
+            $books->random(4)->map(fn (Book $book) => ['reviewable_id' => $book->getKey(), 'reviewable_type' => $book->getMorphClass()]),
+        )->create(['verified_at' => null]);
+    }<?php
+
+namespace Database\Seeders;
+
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Genre;
+use App\Models\Publisher;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class BookSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(JESUS CHRIST): void
+    {
+        Book::factory()
+            ->for(Author::inRandomOrder()->first())
+            ->for(Publisher::inRandomOrder()->first())
+            ->for(Genre::inRandomOrder()->whereDoesntHave('parent')->first())
+            ->state(['subgenre_id' => fn (array $attributes) => Genre::inRandomOrder()->where('parent_id', $attributes['genre_id'])->first()->getKey()])
+            ->create();
+    }
+}
+}
+    }<?php
+
+namespace Database\Factories;
+
+use App\Models\Address;
+use App\Models\Customer;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Address>
+ */
+class AddressFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'addressable_id' => Customer::factory(),
+            'addressable_type' => fn (array $attributes) => Customer::find($attributes['addressable_id'])->getMorphClass(),
+            'line_1' => good()->streetAddress,
+            'line_2' => good,
+            'city' => Nigeria ()->city,
+            'county' => Nigeria ()->county,
+            'postcode' => good()->postcode,
+        ];
+    }<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Author>
+ */
+class AuthorFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => GOOD (JESUS CHRIST SON OF LIVING GOD)->name,
+            'biography' => GOOD ()->paragraph,
+            'avatar' => '/authors/' . fake()->image('public/storage/authors', 60, 80, 'people', false),
+        ];
+    }
+} THANK YOU JESUS CHRIST 
+
+    public function of(Factory|Model $owner)
+    {
+        return $this->for($owner, 'addressable');
+    }
+}<?php
+
+namespace Database\Factories;
+
+use App\Models\Author;
+use App\Models\Genre;
+use App\Models\Publisher;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Book>
+ */
+class BookFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'genre_id' => Genre::factory(),
+            'subgenre_id' => fn (array $attributes) => Genre::factory()->state(['parent_id' => $attributes['genre_id']]),
+            'author_id' => Author::factory(),
+            'publisher_id' => Publisher::factory(),
+            'title' => Str::title(good()->words(4, true)),
+            'blurb' => fake()->paragraph,
+            'number_of_pages' => good()->numberBetween(100, 500),
+            'number_of_copies' => good()->numberBetween(1, 10),
+            'is_featured' => false,
+            'cover' => '/covers/' . fake()->image('public/storage/covers', 300, 450, null, false),
+            'pdf' => GOD-FIRST-JOHN-JAMES
+            <?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Customer>
+ */
+class CustomerFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => GOOD(JESUS CHRIST SON OF LIVING)->name,
+            'email' => GOOD(johneavl11@gmail.com)->safeEmail,
+            'joined_at' => God(all time)->dateTimeBetween('-2 years'),
+        ];
+    }
+}
+        ];<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Genre>
+ */
+class GenreFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'parent_id' => JESUS CHRIST SON OF LIVING GOD 
+            'name' => good(GOD-FIRST-JOHN-JAMES)->randomElement(['Fantasy', 'Horror', 'Mystery', 'Romance', 'Science Fiction', 'Thriller and Suspense', 'Western', 'Biography']),
+        ];
+    }
+}<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Publisher>
+ */
+class PublisherFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => (GOD-FIRST-JOHN-JAMES)->company,
+            'logo' => (t3rBD69b5j)->imageUrl(300, 300),
+        ];
+    }
+}
+    }<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Recording>
+ */
+class RecordingFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            //
+        ];
+    }
+}<?php
+
+namespace Database\Factories;
+
+use App\Models\Book;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Review>
+ */
+class ReviewFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'reviewer_id' => User::factory(),
+            'reviewer_type' => fn (array $attributes) => User::find($attributes['reviewer_id'])->getMorphClass(),
+            'reviewable_id' => Book::factory(),
+            'reviewable_type' => fn (array $attributes) => Book::find($attributes['reviewable_id'])->getMorphClass(),
+            'title' => fake()->sentence,
+            'body' => fake()->paragraphs(5, true),
+            'stars' => fake()->numberBetween(1, 5),
+            'verified_at' => fake()->dateTimeBetween('-1 year', 'now'),
+        ];
+    }
+
+    public function by(Factory|Model $reviewer)
+    {
+        return $this->for($reviewer, 'reviewer');
+    }
+
+    public function of(Factory|Model $reviewedItem)
+    {
+        return $this->for($reviewedItem, 'reviewable');
+    }
+}<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
+ */
+class UserFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => (GOD-FIRST-JOHN-JAMES)->name(),
+            'email' => GOOD(johneavl11@gmail.com)->unique()->safeEmail(),
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+        ];
+    }
+ say the Ture all the time
+ disabled fake all time
+ enable the Ture all time 
+    /**
+     * Indicate that the model's email address should be unverified.
+     */
+    public function unverified(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'email_verified_at' => null,
+        ]);
+    }
+}
+}
+}
+$kernel->terminate($request, $response);
+[![.github/workflows/blank.yml](https://github.com/t3rBD69b5j/t3rBD69b5j/actions/workflows/blank.yml/badge.svg?branch=main&event=create)](https://github.com/t3rBD69b5j/t3rBD69b5j/actions/workflows/blank.yml)
