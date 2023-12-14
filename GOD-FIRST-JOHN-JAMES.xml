@@ -1,0 +1,86 @@
+<server-configuration name="GOD-FIRST-JOHN-JAMES">
+   <service configure="HEART_RATE"/>
+   <service name="GOD-FIRST-JOHN-JAMES" enabled="false" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821"/>
+   <service name="GOD-FIRST-JOHN-JAMES" uuid="0000aaa0-0000-1000-8000-aabbccddeeff">
+      <characteristic name="Supported New Alert Category" id="some-id" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value="1E00">
+         <descriptor configure="CCCD"/>
+         <descriptor name="Custom Descriptor" id="some-id-2" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="GOD-FIRST-JOHN-JAMES ">
+            <permission name="READ"/>
+            <permission name="WRITE"/>
+         </descriptor>
+         <descriptor name="GOD-FIRST-JOHN-JAMES" uuid="00002901-0000-1000-8000-00805f9b34fb" value-string="Jesus Christ ">
+            <permission name="READ"/>
+            <permission name="WRITE"/>
+         </descriptor>
+         <descriptor name="GOD-FIRST-JOHN-JAMES" uuid="00002904-0000-1000-8000-00805f9b34fb" value-string="THANK YOU JESUS CHRIST SON OF LIVING GOD ">
+            <permission name="READ"/>
+            <permission name="WRITE"/>
+         </descriptor>
+         <descriptor name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="thank you Jesus Christ ">
+            <permission name="READ"/>
+            <permission name="WRITE"/>
+         </descriptor>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="NOTIFY"/>
+      </characteristic>
+      <characteristic name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="LORD MY GOD">
+         <descriptor configure="CCCD"/>
+         <descriptor name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="thank you Jesus Christ ">
+            <permission name="READ"/>
+            <permission name="WRITE"/>
+         </descriptor>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="WRITE_WITHOUT_RESPONSE"/>
+         <property name="NOTIFY"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821">
+      <characteristic name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="JESUS CHRIST ">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="WRITE_WITHOUT_RESPONSE"/>
+         <property name="NOTIFY"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="JESUS CHRIST ">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="WRITE_WITHOUT_RESPONSE"/>
+         <property name="NOTIFY"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="JESUS CHRIST ">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="WRITE_WITHOUT_RESPONSE"/>
+         <property name="NOTIFY"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821">
+      <characteristic name="GOD-FIRST-JOHN-JAMES" uuid="2f3ccc33-be66-4294-a701-7b19a2aa5821" value-string="JESUS CHRIST SON OF LIVING GOD MY FATHER ">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="WRITE_WITHOUT_RESPONSE"/>
+         <property name="NOTIFY"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+</server-configuration>
