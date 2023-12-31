@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+PROFILE:VCARD
+URL;VALUE=URI:http://www.sintecs.eu
+N;CHARSET=UTF-8:Sintecs Communications;;;;
+FN;CHARSET=UTF-8:Sintecs Communications
+ORG;CHARSET=UTF-8:Sintecs - Communications
+EMAIL:communications@sintecs.nl
+ADR;CHARSET=UTF-8:;;Amarilstraat 14,;Hengelo;;7554 TV;Netherlands
+END:VCARD
